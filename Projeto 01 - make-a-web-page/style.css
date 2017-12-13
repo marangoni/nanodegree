@@ -1,0 +1,33 @@
+/* Página de estilo - projeto 01 */
+
+*{
+  font-family: verdana;
+  outline: 1px solid red !important; /* apoio a criação dos boxes na pagina */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  
+
+
+h1{
+  background-color: #E6E6FA;
+  margin: 2px;
+  padding: 5px;
+}
+
+.app{
+    display: flex;
+}
+.description {
+  color: #778899;
+  outline: 2px solid;
+
+  }
+
+
+
+
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes.*/

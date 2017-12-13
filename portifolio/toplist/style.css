@@ -1,0 +1,66 @@
+body{
+  font-family: verdana;
+  max-width: 2000;
+  background-color:	#003B46;
+}
+
+h1{
+  outline: 2px solid;
+  outline-color: white;
+  margin: 2px;
+  padding: 15px;
+  color: white;
+}
+
+p{
+  width: 80%;
+  font-size: 12pt;
+  padding: 10px;
+  color: white;
+}
+
+h2{
+background-color: #66A5AD;
+width:60%;
+padding: 5px;
+color: white;
+border-radius: 0px 18px 18px 1px;
+-moz-border-radius: 0px 18px 18px 1px;
+-webkit-border-radius: 0px 18px 18px 1px;
+}
+
+h3{
+background-color: #07575B;
+width:40%;
+padding: 5px;
+color: white;
+}
+
+ol{
+  width: 50%;
+  color: white;
+}
+
+ul{
+  width: 50%;
+  color: white;
+  list-style-type: disc;
+}
+
+span{
+  font-weight: bold;
+  color: white;
+  style="color:white"
+}
+
+.app{
+    display: flex;
+}
+.description {
+  color: #778899;
+  outline: 2px solid;
+}
+
+#exemplos{
+
+}
