@@ -1,6 +1,9 @@
+
+/* Estilo dos elementos HTML */
+
 body{
   font-family: verdana;
-  max-width: 2000;
+  max-width: 2000px;
   background-color:	#003B46;
 }
 
@@ -9,13 +12,6 @@ h1{
   outline-color: white;
   margin: 2px;
   padding: 15px;
-  color: white;
-}
-
-p{
-  width: 80%;
-  font-size: 12pt;
-  padding: 10px;
   color: white;
 }
 
@@ -34,6 +30,17 @@ background-color: #07575B;
 width:40%;
 padding: 5px;
 color: white;
+border-radius: 0px 0px 49px 0px;
+-moz-border-radius: 0px 0px 49px 0px;
+-webkit-border-radius: 0px 0px 49px 0px;
+
+}
+
+p{
+  width: 80%;
+  font-size: 12pt;
+  padding: 10px;
+  color: white;
 }
 
 ol{
@@ -50,17 +57,38 @@ ul{
 span{
   font-weight: bold;
   color: white;
-  style="color:white"
 }
 
-.app{
-    display: flex;
+hr{
+   display: block;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   margin-left: auto;
+   margin-right: auto;
+   border-width: 2px;
 }
+
+
+
+a:visited {
+    color: HoneyDew  ;
+}
+
+/* mouse over link */
+a:hover {
+    color: Aquamarine ;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* Classes */
+
 .description {
-  color: #778899;
+  /*  color: #778899; */
+  background-color: #021C1E;
   outline: 2px solid;
-}
-
-#exemplos{
-
+  outline-color: white;
 }

@@ -9,33 +9,27 @@
 </head>
 
 <body>
-  <h1> Criação de páginas estilizadas com HTML e CSS </h1>
-    <p> Resumo das lições 1 a 3 do curso de Introdução à Programação abordando conceitos elementares de HTML e CSS.</p>
+<div>
+    <h1> Criação de páginas estilizadas com HTML e CSS </h1>
+    <p> Resumo das lições 1 a 3 do curso de Introdução à Programação abordando conceitos elementares de HTML e CSS.
+    </p>
 
-  <hr color="white" size=4 >
+</div>
+  <hr>
 
-    <h2> Conteúdos </h2>
-    <h3> HTML </h3>
+    <h2>  Conteúdos </h2>
+    <h3> <a href="index.html#P1">HTML</a></h3>
     <ol type="1">
       <li> <a href="index.html#C1"> Definições </a></li>
       <li> <a href="index.html#C2"> Elementos </a></li>
       <li> <a href="index.html#C3"> Elementos <em>in line </em> e de bloco </a></li>
       <li> <a href="index.html#C4"> Atributos </a></li>
     </ol>
-
-
-
-   <h3> CSS </h3>
-   <ol type="1">
-    <li> Definições </li>
-    <li> Elementos de formatação </li>
-  </ol>
-   <h3> Referências </h3>
-
-<hr color="white" size=4 >
+    <h3><a href="index.html#P2"> Referências </a></h3>
+<hr>
 
 <div>
-    <h2> HTML </h2>
+    <h2 id="P1"> HTML </h2>
     <div class="description">
           <h3 id="C1"> Definições </h3>
           <p> <b>HTML</b> significa - <em>Hyper Text Markup Language </em>, ou linguagem de marcação de hipertextos e é a linguagem utilizada para codificação de páginas <em>web</em>.
@@ -49,7 +43,7 @@
       </div>
       <div class="description">
         <h3 id="C2"> Elementos </h3>
-        <p> Os elementos da linguagem HTML são formados por caracteres mnemônicos delimitados pelos símbolos < e >, denominados <span> tags</span>.
+        <p> Os elementos da linguagem HTML são formados por caracteres mnemônicos delimitados pelos símbolos &#8826; e &#8827;, denominados <span> tags</span>.
         </p>
         <p>Tais elementos podem ser compostos por somente tags de abertura ou tags de abertura e fechamento, como veremos em alguns exemplos a seguir:
         </p>
@@ -61,8 +55,8 @@
         </p>
 
         <ul>
-          <il> Tag - <span> < b ></span> e <span> < /b ></span> - <em> bold </em> - Mostra o texto em <b> negrito.</b> </il><br>
-          <il> Tag - <span> < em ></span> e <span> < /em ></span>  - <em> emphasise </em> - Mostra o texto em <em>itálico</em>.</il>
+          <li> Tag - <span> &#8826; b ></span> e <span> &#8826; /b ></span> - <em> bold </em> - Mostra o texto em <b> negrito.</b> </li>
+          <li> Tag - <span> &#8826; em ></span> e <span> &#8826; /em ></span>  - <em> emphasise </em> - Mostra o texto em <em>itálico</em>.</li>
         </ul>
 
       <p>
@@ -70,17 +64,31 @@
       </p>
 
       <ul>
-        <il> Tag - <span> < br ></span> <em> break </em> - Quebra de linha. </il><br>
-         Tag - <span> < hr ></span> <em> horizontal row </em> - Insere linha horizontal. </il>
+        <li> Tag - <span> &#8826; br &#8827;</span> <em> break </em> - Quebra de linha. </li>
+        <li> Tag - <span> &#8826; hr &#8827;</span> <em> horizontal row </em> - Insere linha horizontal. </li>
       </ul>
-      <p> Mais informações sobre elementos você encontra <a href="https://www.w3schools.com/html/html_elements.asp"> aqui </a>
+      <p> Mais informações sobre elementos você encontra
+        <a href="https://www.w3schools.com/html/html_elements.asp"> aqui </a>
       </p>
-      </div>
+    </div>
 
       <div class="description">
         <h3 id="C3"> Elementos <em>in line </em> e em bloco </h3>
-          <p> Os elementos da linguagem HTML podem ainda ser em <b> bloco </b> ou <b>alinhados.</b> Dos elementos estudados até o momento são alinhadas (<em> inline </em>) as tags: a, spam, br, img e strong e são em bloco as tags div e p.</p>
+          <p> Os elementos da linguagem HTML podem ainda ser em <b> bloco </b> ou <b>alinhados.</b>
+          <p>
+            Os elementos de bloco sempre começam numa nova linha e utilizam toda largura disponível.
+          </p>
 
+          <p>
+            Os elementos <em> in line</em> não iniciam uma nova linha e somente utilizam a largura necessária.
+          </p>
+
+          <p>
+            Dos elementos estudados até o momento são alinhadas (<em> inline </em>) as tags: a, spam, br, img e strong e são em bloco as tags div e p.
+          </p>
+
+          <p> Mais informações sobre elementos <em> in line </em> e de bloco você encontra <a href="https://www.w3schools.com/html/html_blocks.asp"> aqui </a>
+          </p>
 
       </div>
       <div class="description">
@@ -92,16 +100,31 @@
        </p>
        <p> Exemplos: </p>
        <ul>
-         <il> <span> < a href="https://www.w3schools.com"> Este é um link < /a></span><br>
-        <il> <span> < img src="img_girl.jpg"> </il> </span>
+        <li> <span> &#8826; a  href="https://www.google.com" &#8827; Este é um link &#8826; /a&#8827;</span></li>
+        <li> <span> &#8826; img src="img_girl.jpg"&#8827; </span></li>
        </ul>
        <p> Mais informações sobre atributos você encontra <a href="https://www.w3schools.com/html/html_attributes.asp"> aqui </a>
        </p>
       </div>
 
 </div>
-  <h2> CSS </h2>
+  <h2 id="P2"> <img src="./images/notes.jpg" alt="notes" height="60"> Referências  </h2>
 
-  <h2> Referências </h2>
+  <p> Páginas utilizadas como referência neste trabalho: </p>
+<ul>
+  <li> <a href="https://www.w3schools.com"> www.w3schools.com </a></li>
+  <li> <a href="https://www.canva.com/learn/100-color-combinations/"> www.canva.com/learn/100-color-combinations </a> </li>
+  <li> <a href="http://www.corelangs.com/html/tags/line-breaks.html"> www.corelangs.com/html/tags/line-breaks.html </a> </li>
+  <li> <a href="https://www.cssmatic.com/border-radius"> www.cssmatic.com/border-radius </a> </li>
+</ul>
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS válido!" />
+    </a>
+</p>
+
 </body>
 </html>
