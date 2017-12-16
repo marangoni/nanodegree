@@ -1,0 +1,23 @@
+*{
+  outline: 1px solid red !important; /* apoio a criação dos boxes na pagina */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+  div {
+    height : 100px;
+    width : 100px;
+    border-radius: 2px;
+  }
+  .stop {
+    background-color: blue;
+  }
+  .slow {
+    background-color: yellow;
+  }
+  .go {
+    background-color: green;
+  }
+</style>
