@@ -16,24 +16,23 @@ h1{
 }
 
 h2{
-background-color: #66A5AD;
-width:60%;
-padding: 5px;
-color: white;
-border-radius: 0px 18px 18px 1px;
--moz-border-radius: 0px 18px 18px 1px;
--webkit-border-radius: 0px 18px 18px 1px;
+  background-color: #66A5AD;
+  width:60%;
+  padding: 5px;
+  color: white;
+  border-radius: 0px 18px 18px 1px;
+  -moz-border-radius: 0px 18px 18px 1px;
+  -webkit-border-radius: 0px 18px 18px 1px;
 }
 
 h3{
-background-color: #07575B;
-width:40%;
-padding: 5px;
-color: white;
-border-radius: 0px 0px 49px 0px;
--moz-border-radius: 0px 0px 49px 0px;
--webkit-border-radius: 0px 0px 49px 0px;
-
+  background-color: #07575B;
+  width:40%;
+  padding: 5px;
+  color: white;
+  border-radius: 0px 0px 49px 0px;
+  -moz-border-radius: 0px 0px 49px 0px;
+  -webkit-border-radius: 0px 0px 49px 0px;
 }
 
 p{
@@ -68,8 +67,6 @@ hr{
    border-width: 2px;
 }
 
-
-
 a:visited {
     color: HoneyDew  ;
 }
@@ -87,7 +84,6 @@ a:active {
 /* Classes */
 
 .description {
-  /*  color: #778899; */
   background-color: #021C1E;
   outline: 2px solid;
   outline-color: white;
