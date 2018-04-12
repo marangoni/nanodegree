@@ -1,11 +1,30 @@
-
+# -*- coding: utf-8 -*-
 ###############################################################################
 # Jogo Fill the blanks
 # IPND Stage 2 Final Project
 # Luiz C M de Oliveira
 # abril de 2018
 # Versao: Atualizada usando a estrutura dict
-###############################################################################
+############################################################################
+
+#definicoes do jogo
+data = {
+    'facil': {
+        'frase':  """'Hello __1__!' Em __2__ isto é particularmente facil; tudo o que voce deve fazer e digitar: __3__ 'Hello __1__ !'. Os diferentes blocos de programa sao separados atraves de __4__""",
+        'respostas': ["world", "Python", "print", "indentacao"],
+        'tentativas': 5
+    },
+    'medio': {
+        'frase': """Construcoes de Python incluem: estrutura de __1__ (if, else, elif); estrutura de __2__ (for, while), que itera por um container, capturando cada elemento em uma variavel local dada; construcao de __3__ (class), construcao de __4__ (def).""",
+        'respostas': ["selecao", "repeticao", "classes", "sub-rotinas"],
+        'tentativas': 3
+    },
+    'dificil': {
+        'frase': """Uma __1__ eh definida com class nome:, e o codigo seguinte eh a composicao dos __2__. Os metodos sao chamados objeto.metodo(argumento1, argumento2, ...) e sao definidos iguais a uma funcao, como __3__(self, argumento1, argumento2, ...). Veja que o __4__ self contera uma referencia para a instancia da classe definida em objeto quando for efetuada esta chamada. Os __2__ da __1__ podem ser acessados em qualquer lugar da __1__, e os __3__ de instancia devem ser declarados dentro dos __3__ utilizando a referencia a instancia atual (self).""",
+        'respostas': ["classe", "atributos", "metodo", "parametro"],
+        'tentativas': 2
+    }
+}
 
 # Funcao - escolha_nivel - retorna o valor do nivel escolhido pelo usuario
 def escolha_nivel():
@@ -91,24 +110,6 @@ def mensagem_ganhou():
 def game():
     #definicoes do jogo
     numero_max_tentativas = 5
-    data = {
-        'facil': {
-            'frase':  """'Hello __1__!' Em __2__ isto e particularmente facil; tudo o que voce deve fazer e digitar: __3__ 'Hello __1__ !'. Os diferentes blocos de programa sao separados atraves de __4__""",
-            'respostas': ["world", "Python", "print", "indentacao"],
-            'tentativas': 5
-        },
-        'medio': {
-            'frase': """Construcoes de Python incluem: estrutura de __1__ (if, else, elif); estrutura de __2__ (for, while), que itera por um container, capturando cada elemento em uma variavel local dada; construcao de __3__ (class), construcao de __4__ (def).""",
-            'respostas': ["selecao", "repeticao", "classes", "sub-rotinas"],
-            'tentativas': 3
-        },
-        'dificil': {
-            'frase': """Uma __1__ eh definida com class nome:, e o codigo seguinte eh a composicao dos __2__. Os metodos sao chamados objeto.metodo(argumento1, argumento2, ...) e sao definidos iguais a uma funcao, como __3__(self, argumento1, argumento2, ...). Veja que o __4__ self contera uma referencia para a instancia da classe definida em objeto quando for efetuada esta chamada. Os __2__ da __1__ podem ser acessados em qualquer lugar da __1__, e os __3__ de instancia devem ser declarados dentro dos __3__ utilizando a referencia a instancia atual (self).""",
-            'respostas': ["classe", "atributos", "metodo", "parametro"],
-            'tentativas': 2
-        }
-    }
-
     abertura()
     nivel = escolha_nivel()
     frase = data[nivel]['frase']
@@ -119,8 +120,8 @@ def game():
     # Loop principal do jogo
     # se o jogador preencher corretamente resultado igual a True e o jogo continua
     # se o jogador preencher incorretamente resultado igual a False e o jogo acaba
-    for n in range(1,numero_max_tentativas):
-        resultado = preenche_lacuna(n, tentativas, frase, resposta)
+    for tentativa in range(1,numero_max_tentativas):
+        resultado = preenche_lacuna(tentativa, tentativas, frase, resposta)
         # atualiza frase
         # variavel global nova_frase atualizada na rotina preenche_lacuna
         frase = nova_frase
@@ -128,7 +129,6 @@ def game():
             mensagem_perdeu()
             break
             return
-
     if resultado == True: # Se o jogador acertou as 4 lacunas
         mensagem_ganhou()
     return
