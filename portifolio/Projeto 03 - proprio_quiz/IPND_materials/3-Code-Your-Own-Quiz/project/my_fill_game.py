@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: iso-8859-1 -*-
-##################################################################################
+##################################################################################d
 # Encoding para utilizacao de caracteres acentuados
 # IPND Stage 2 Final Project
 # Luiz C M de Oliveira
