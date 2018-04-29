@@ -1,5 +1,16 @@
+###############################################################################
+# Projeto 04 - Criação site de filmes
+# Luiz C M de Oliveira
+# abril de 2018
+# Versao revisada: Inseridas resenhas no site e comentários aos métodos
+# Arquivo principal que gera a página html com os scripts embutidos
+############################################################################
+
 import media
 import fresh_tomatoes
+# Bibliotecas python necessárias ao Projeto
+# media - define a classe Movie e seus métodos correspondentes
+# fresh_tomatoes - definições dos métodos utilizados para criação da página htlm e seus estilos
 
 forrest_gump = media.Movie("Forrest Gump",
                         """A história atravessa várias décadas na vida do personagem central, Forrest Gump, um homem simples do Alabama que viaja ao redor do mundo, encontra figuras históricas, influencia a cultura popular e é testemunha de alguns dos eventos históricos mais notórios da segunda metade do século XX.""",
@@ -33,4 +44,7 @@ Wiplash = media.Movie("Wiplash",
                        "https://www.youtube.com/watch?v=7d_jQycdQGo")
 
 filmes = [forrest_gump, A_vida_e_bela, Superman, Big_hero, Cinema_paradiso, Wiplash]
+
 fresh_tomatoes.open_movies_page(filmes)
+    # método da biblioteca fresh_tomatoes chamado para geração da página html dos Filmes
+    # a lista "filmes" com os objetos Movie é utilizada como parâmetro

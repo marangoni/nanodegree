@@ -1,8 +1,11 @@
+# Arquivo com as definições de estilo da página HTML de filmes preferidos
+# e funções associadas
+
 import webbrowser
 import os
 import re
 
-# Styles and scripting for the page
+# Estilos e scripts para a pagina
 main_page_head = '''
 <head>
     <meta charset="utf-8">
@@ -136,9 +139,10 @@ def create_movie_tiles_content(movies):
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
-            movie_title=movie.title,
-            poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+        movie_title=movie.title,
+        poster_image_url=movie.poster_image_url,
+        trailer_youtube_id=trailer_youtube_id,
+        storyline=movie.storyline
         )
     return content
 
