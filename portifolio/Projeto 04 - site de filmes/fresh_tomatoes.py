@@ -15,7 +15,7 @@ main_page_head = '''
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
-            padding-top: 180px;
+            padding-top: 80px;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
